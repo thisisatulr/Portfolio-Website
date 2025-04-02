@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="boot-screen" id="bootScreen">
+        <div class="apple-boot-logo"></div>
+        <div class="loading-bar"></div>
+    </div>
+    
+    <div class="menu-bar">
+        <div class="menu-left">
+            <img src="image/apple.png" alt="Apple Logo" class="apple-logo">
+            <span>Finder</span>
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Go</span>
+            <span>Window</span>
+            <span>Help</span>
+        </div>
+        <div class="menu-right">
+            <span><a href="#" onclick="document.documentElement.requestFullscreen();" class="menu-right">
+                Enter Fullscreen
+            </a></span>
+        </div>
+    </div>
+
+    <div class="widget-container">
+        <div class="widget weather-widget">
+            <h2>Read<span style="color: yellow">me</span></h2><BR><BR>
+            <p>All app butoons are clickable and functional.</p>
+        </div>
+
+        <div class="widget portfolio">
+            <a href="Portfolio/index.html" target="_blank"><img src="image/portfolio.png" alt="Portfolio"></a>
+        </div>
+    </div>
+
+    <div class="notepad">
+        <div class="notepad-header">
+            <div class="window-buttons">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <span class="title">TextEdit</span>
+        </div>
+        
+
+        <div class="tabs-container">
+            <input type="radio" id="about-tab" name="tab">
+            <label for="about-tab">About Me</label>
+
+            <input type="radio" id="projects-tab" name="tab">
+            <label for="projects-tab">Projects</label>
+
+            <input type="radio" id="skills-tab" name="tab">
+            <label for="skills-tab">Skills</label>
+
+            <div class="notepad-content">
+                <div class="tab-content about">
+                    <p>Hi, I am Atul R! I love exploring new things and working on exciting projects.</p>
+                </div>
+                <div class="tab-content projects">
+                    <p>1. macOS Portfolio Website<br>2. Arduino-Based Project<br>3. Encrypted Chat App</p>
+                </div>
+                <div class="tab-content skills">
+                    <p>Data Structures, Algorithms, Backend Development, Arduino, Web Development</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="dock">
+        <div class="dock-item" id="finder">
+            <img src="image/finder.png" alt="Finder">
+        </div>
+        <a href="tel:+917012276229" class="dock-item">
+            <img src="image/phone.png" alt="Phone">
+        </a>
+        <a href="mailto:atulrajesh2006@gmail.com" class="dock-item">
+            <img src="image/mail.png" alt="Mail">
+        </a>
+        <a href="https://github.com/thisisatulr" target="_blank" class="dock-item">
+            <img src="image/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/atul-r-136672323/" target="_blank" class="dock-item">
+            <img src="image/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+</body>
+</html>
