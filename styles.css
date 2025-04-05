@@ -132,6 +132,50 @@ p, span, li {
     }
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+    z-index: 200;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--muted-blue);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 10px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+}
+
 .home {
     min-height: 100vh;
     padding: 80px 5%;
