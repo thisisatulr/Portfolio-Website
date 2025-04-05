@@ -23,7 +23,10 @@ body {
     font-family: Arial, sans-serif;
     color: var(--white);
     background-color: var(--cool-gray);
-    animation: fadeIn 0.8s ease-in-out;
+}
+
+.fade-in-content {
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 @keyframes fadeIn {
