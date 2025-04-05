@@ -13,8 +13,41 @@
 }
 
 * {
-    max-width: 100%;
     box-sizing: border-box;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-block {
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .resume-button, .contact-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 
